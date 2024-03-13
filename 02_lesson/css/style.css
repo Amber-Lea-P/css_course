@@ -1,0 +1,52 @@
+/* /* Universal selector, not often used outside of CSS resets
+*{
+    font-family: monospace;
+} */
+html {
+    font-size: 30px;
+}
+/*Element selectors - select all the elements of that type*/
+body {
+    font-size: 25px;
+}
+
+main{
+    color: green;
+}
+
+h1, h2{
+    color: blue;
+}
+
+/* CSS works from the top down "cascades". Whatever is read last will be put into use, unless specificity is used with class selectors. */
+
+
+p {
+    color: purple;
+}
+
+p {
+    color: red;
+}
+/*This is a perfect example of when a class should be used. To make it more efficient, add a class name to the span*/
+/* p span {
+    text-transform: uppercase;
+    background-color: gold;
+} */
+
+.highlight{
+    text-transform: uppercase;
+    background-color: gold;
+}
+
+/*Class selector- starts with a period (.) class names are choosen but they must make sense*/
+.gray {
+    color: gray;
+}
+
+/*ID selector- starts with a # symbol and are a mores specific selector. IDs are unique and should only be used once. Not the best practice to you Ids in CSS */
+#second {
+    font-style: italic;
+}
+
+/*Inheritance: when another element inherits the settings or properties from the parent element*/
