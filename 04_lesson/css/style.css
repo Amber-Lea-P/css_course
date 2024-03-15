@@ -1,4 +1,38 @@
-/* The default size is 16px. Px (pixels) is an absolute level of measurement. Not to be used often because we dont want to take the default font size option away from the user. This setting is available to update in Google settings if they user wants to change it. */
-p {
-    font-size: 32px;
+/* The default size is 16px. Px (pixels) is an absolute value of measurement. Not to be used often, especially not with font size, because we dont want to take the certain default options away from the user. Default settings are available to update in Google settings if they user wants to change it. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+}
+
+header {
+    width: 100%
+}
+
+
+h1 {
+    border: 2px dashed red;
+    width: 50%;
+    font-size: 3rem;
+    padding: 0.5em;
+}
+/*Percentages are always relative to something, in code its relative to the parent. H1 elements are block level elements so they have a default percentage of 100%. In this case the h1 is a child elment of the header. By making the header element have a smaller width, that also makes the h1 havea  smaller width*/
+
+/*font size of the root element = rem, 1 rem is the default */
+
+main{
+    
+    font-size: 2rem;
+}
+
+
+p {
+    font-size: 2rem;
+    width: 40ch;
+}
+/* rem is not looking for the parent element. It is looking for the root element. So in this case it would be the default setting in the browser since the html element's css is not set.  If you are using em then the element will look at the parent element. In this case it would be the main element which would be 2rem * 2. */
+/* 40ch means forty characters before it wraps*/
