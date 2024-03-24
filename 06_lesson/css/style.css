@@ -1,12 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 /*
 
 Typography is the way the text is arranged and presented. 
 
 */
-
+/*Serif is the normally the browser default*/
 body {
     padding: 10%;
     font-size: 2rem;
+    font-family: "Roboto", sans-serif;
 }
 
 /* This will allow the input and button to inherit the font from the body element*/
@@ -15,8 +18,9 @@ body {
 } */
 
 p{
-    line-height: 2;
+    line-height: 1.5;
 }
 /*Text-indent is used to indent the first line of the p, great time to use em units
 
-The line height default is 1.2*/
+The line height default is 1.2
+font-weight: is how bold the words are*/
