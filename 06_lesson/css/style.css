@@ -5,5 +5,18 @@ Typography is the way the text is arranged and presented.
 */
 
 body {
-    padding: 25%;
+    padding: 10%;
+    font-size: 2rem;
 }
+
+/* This will allow the input and button to inherit the font from the body element*/
+/* input, button {
+    font: inherit;
+} */
+
+p{
+    line-height: 2;
+}
+/*Text-indent is used to indent the first line of the p, great time to use em units
+
+The line height default is 1.2*/
