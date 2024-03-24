@@ -4,4 +4,21 @@ body {
     padding: 10%;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
+}/* Links are still text that can be styled */
+
+/*This is the proper order for anchor css*/
+a{
+    color: steelblue;
+}
+/*pseudo class: represents the state of the element. 27127*/
+a:visited{
+    color: purple;
+}
+
+a:hover, a:focus {
+    color: dodgerblue;
+}
+
+a:active {
+    color: red;
 }
